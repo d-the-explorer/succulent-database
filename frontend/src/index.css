@@ -15,15 +15,16 @@ body {
 }
 
 .header {
-  background-image: url('/jbauer-fotographie-desert3832488.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #4d8f4d 0%, #84c784 100%);
   color: white;
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 30px;
   text-align: center;
+background-image: url(../public/jbauer-fotographie-desert-3832488.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .header h1 {
