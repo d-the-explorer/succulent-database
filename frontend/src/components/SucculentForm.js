@@ -109,7 +109,7 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
     <div className="modal show">
       <div className="modal-content">
         <div className="modal-header">
-          <h2>{editingId ? 'Edit Succulent' : 'Add New Succulent'}</h2>
+          <h2>{editingId ? 'Edit Art Supply' : 'Add New Art Supply'}</h2>
           <button className="close-btn" onClick={onClose}>×</button>
         </div>
 
@@ -124,18 +124,18 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
               value={formData.name}
               onChange={handleInputChange}
               required
-              placeholder="e.g., Aloe Vera"
+              placeholder="e.g., Staedtler color pencils"
             />
           </div>
 
           <div className="form-group">
-            <label>Scientific Name</label>
+            <label>Quantity</label>
             <input
               type="text"
-              name="scientificName"
-              value={formData.scientificName}
+              name="quantity"
+              value={formData.quantity}
               onChange={handleInputChange}
-              placeholder="e.g., Aloe barbadensis"
+              placeholder="e.g., 12 pack "
             />
           </div>
 
@@ -145,7 +145,7 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
               name="description"
               value={formData.description}
               onChange={handleInputChange}
-              placeholder="Tell us about this succulent..."
+              placeholder="Tell us about this art supply..."
             />
           </div>
 
@@ -156,7 +156,7 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
               name="category"
               value={formData.category}
               onChange={handleInputChange}
-              placeholder="e.g., Aloe, Echeveria, Jade"
+              placeholder="e.g., Markers, Paint pens, Color pencils"
             />
           </div>
 
@@ -167,29 +167,18 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
               name="tags"
               value={formData.tags}
               onChange={handleInputChange}
-              placeholder="e.g., low-maintenance, medicinal, green"
+              placeholder="e.g., Washable, Permanent"
             />
           </div>
 
           <div className="form-group">
-            <label>Watering Frequency</label>
+            <label>Minimum Age </label>
             <input
               type="text"
-              name="wateringFrequency"
-              value={formData.wateringFrequency}
+              name="age"
+              value={formData.age}
               onChange={handleInputChange}
-              placeholder="e.g., Every 2-3 weeks"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Sunlight Requirements</label>
-            <input
-              type="text"
-              name="sunlight"
-              value={formData.sunlight}
-              onChange={handleInputChange}
-              placeholder="e.g., Bright indirect light"
+              placeholder="e.g., 3+, 5+"
             />
           </div>
 
@@ -212,7 +201,7 @@ const SucculentForm = ({ onClose, onSubmit, editingId }) => {
               Cancel
             </button>
             <button type="submit" className="btn btn-success" disabled={loading}>
-              {loading ? 'Saving...' : 'Save Succulent'}
+              {loading ? 'Saving...' : 'Save Art supply'}
             </button>
           </div>
         </form>

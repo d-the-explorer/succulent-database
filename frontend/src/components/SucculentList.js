@@ -4,8 +4,8 @@ const SucculentList = ({ succulents, onDelete, onEdit }) => {
   if (succulents.length === 0) {
     return (
       <div className="empty-state">
-        <h3>No succulents found</h3>
-        <p>Add your first succulent to get started!</p>
+        <h3>No Art supplies found</h3>
+        <p>Add your first art supply to get started!</p>
       </div>
     );
   }
@@ -23,8 +23,8 @@ const SucculentList = ({ succulents, onDelete, onEdit }) => {
           </div>
           <div className="succulent-content">
             <h2>{succulent.name}</h2>
-            {succulent.scientificName && (
-              <div className="succulent-scientific">{succulent.scientificName}</div>
+            {succulent.quantity && (
+              <div className="succulent-scientific">{succulent.quantity}</div>
             )}
             {succulent.category && (
               <div className="succulent-category">{succulent.category}</div>
@@ -39,10 +39,10 @@ const SucculentList = ({ succulents, onDelete, onEdit }) => {
             {succulent.description && (
               <p className="succulent-description">{succulent.description}</p>
             )}
-            {(succulent.wateringFrequency || succulent.sunlight) && (
+            {( succulent.age) && (
               <div className="succulent-info">
-                {succulent.wateringFrequency && <div>💧 {succulent.wateringFrequency}</div>}
-                {succulent.sunlight && <div>☀️ {succulent.sunlight}</div>}
+                
+                {succulent.age && <div>☀️ {succulent.age}</div>}
               </div>
             )}
             <div className="succulent-actions">

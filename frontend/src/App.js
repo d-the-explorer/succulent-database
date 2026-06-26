@@ -81,8 +81,8 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>🌵 Succulent Database</h1>
-        <p>Catalog your succulent collection</p>
+        <h1>🎨 Artist Collection</h1>
+        <p>Catalog your art supplies collection!</p>
       </div>
 
       {error && <div className="error">{error}</div>}
@@ -113,7 +113,7 @@ function App() {
           ))}
         </select>
         <button className="btn btn-primary" onClick={() => setShowForm(true)}>
-          + Add Succulent
+          + Add supply
         </button>
       </div>
 
